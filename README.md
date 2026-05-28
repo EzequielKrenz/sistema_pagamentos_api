@@ -131,11 +131,3 @@ sistema_pagamentos_api/
 ├── .env.example
 └── README.md
 ```
-## Resumo
-cd sistema_pagamentos_api
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-uvicorn app.main:app --reload
-
-Acessar no Navegador: http://127.0.0.1:8000/docs
