@@ -100,20 +100,6 @@ GET /notificacoes/?cliente_id=1
 
 O cliente será notificado porque no seed ele comprou o produto por R$ 100,00 e o novo preço ficou R$ 80,00.
 
-## Relatório exigido no trabalho
-
-Buscar por CNPJ:
-
-```text
-GET /relatorios/vendas-cliente?cnpj=12.345.678/0001-99
-```
-
-Buscar por Razão Social:
-
-```text
-GET /relatorios/vendas-cliente?razao_social=Mercado
-```
-
 ## Estrutura de pastas
 
 ```text
@@ -145,3 +131,11 @@ sistema_pagamentos_api/
 ├── .env.example
 └── README.md
 ```
+## Resumo
+cd sistema_pagamentos_api
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+
+Acessar no Navegador: http://127.0.0.1:8000/docs
