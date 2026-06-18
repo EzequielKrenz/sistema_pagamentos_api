@@ -29,7 +29,7 @@ Abra a pasta `sistema_pagamentos_api` no VS Code e rode os comandos abaixo no te
 No Windows PowerShell:
 
 ```powershell
-python -m venv .venv
+python3 -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
